@@ -1,3 +1,7 @@
+#Estudiante: Camilo Ramirez Pineda
+#ID BANNER: 100183425
+#CORREO: gramir32@estudiante.ibero.edu.co
+
 #Escribir un programa en Python que declare una lista y la vaya llenando de números hasta
 #que introduzcamos un número negativo. Entonces se debe imprimir el vector (sólo los
 #valores introducidos).
