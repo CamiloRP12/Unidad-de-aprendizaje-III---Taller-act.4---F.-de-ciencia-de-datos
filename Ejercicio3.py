@@ -31,22 +31,28 @@ temperaturas_medias=[(temperaturas_minimas[i]+temperaturas_maximas[i])/2 for i i
 #Ya con eso mostramos la temperatura media de cada día
 #Acá usamos el \n para que la respuesta sobre las temperaturas medias quede un enter más abajo, para resaltarlo y que
 #sea más visible
-print("\nTemperaturas medias de cada día: ") 
+print("\nSegún los datos suministrados, las temperaturas medias de cada día son las siguientes: ") 
 for i in range(5):
-    print(f"Día {i+1}:{temperaturas_medias[i]:.2f}°") #Acá usamos el .2f para que el resultado solo tenga 2 decimales
+    print(f"\nDía {i+1}:{temperaturas_medias[i]:.2f}°") #Acá usamos el .2f para que el resultado solo tenga 2 decimales
 
 #Ahora si procedemos a buscar el día con la menor temperatura y los días con menor temperatura
+
+#Con la función min se intenta buscar el valor más pequeño dentro de la variable temperaturas_minimas
 menor_temperatura=min(temperaturas_minimas)
 dias_con_menor_temperatura=[i+1 for i in range(5) if temperaturas_minimas[i]==menor_temperatura]
 
-print(f"\nLos días con la temperatura más baja ({menor_temperatura}°) son: {dias_con_menor_temperatura}")
+print(f"\nEl día con la temperatura más baja ({menor_temperatura}°) es: {dias_con_menor_temperatura}")
 
-#Ahora para el punto final se procede con los días de mayor temperatura
+#Ahora para el punto final se procede con los días de mayor temperatura, para ello se busca determinar el valor contra
+#el cual se compararán las temperaturas obtenidas (es decir se creará una variable que contenga uan tempratura dada
+#por el usuario)
 temperatura_dada_por_el_usuario=float(input("\nPor favor ingrese una temperatura para validar si coincide con\
- alguno de los días con temperatura más alta: "))
+ alguno de los días con temperatura más alta: ")) #Se usará el float para obtener números decimales
 dias_con_temperatura_mas_alta=[i+1 for i in range(5) if temperaturas_maximas[i]==temperatura_dada_por_el_usuario]
 
-#Por último se procede a dar el resultado de la búsqueda según la información dada por el usuario
+#Por último se procede a dar el resultado de la búsqueda según la información dada por el usuario mediante el condicional if
+#así si alguna de las temperaturas más altas es igual a la tempratura dada por el usuario, el programa imprimirá ese dato. Al
+#contener la variable dias_con_temperatura_mas_alta 5 datos, puede indicar que uno o varios coinciden sin problema
 if dias_con_temperatura_mas_alta:
     print(f"\nDías con temperatura más alta de {temperatura_dada_por_el_usuario}°:{dias_con_temperatura_mas_alta}")
 else:

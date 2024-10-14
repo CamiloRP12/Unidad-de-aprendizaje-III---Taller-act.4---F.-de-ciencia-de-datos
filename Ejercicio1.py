@@ -16,6 +16,7 @@ while True:
         #Con este punto vamos añadiendo los números a nuestra lista con .append
         lista_de_numeros.append(numero)
         #Y acá imprimimos pero con f (format) para poder incluir la variable lista_de_numeros dentro de la cadena de texto
+        #Y usamos el \n para darle un enter adicional a la respuesta, haciendo que sea más fácil de leer
         print(f"\nBien hecho, seguiste las indicaciones a cabalidad, la lista de números\
  introducidos hasta el momento es la siguiente: {lista_de_numeros}")
         #Habiendo usado el try con el except, evitamos que si el programa bota error se detenga, y le 

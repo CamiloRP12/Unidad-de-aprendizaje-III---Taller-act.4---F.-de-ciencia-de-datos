@@ -1,0 +1,30 @@
+Ejercicio 1: Ingresar números en una lista hasta que se ingrese un número negativo
+
+while True:: Se utiliza para repetir indefinidamente el ciclo hasta que se cumpla una condición (en este caso, ingresar un número negativo).
+try-except: Permite manejar errores si el usuario ingresa algo que no es un número, evitando que el programa falle.
+int(input()): Convierte la entrada del usuario en un número entero, necesaria para poder compararla.
+if numero < 0:: Verifica si el número es negativo para terminar el ciclo.
+lista.append(numero): Agrega el número ingresado a la lista si es positivo.
+
+Ejercicio 2: Sumar dos listas de números
+
+for i in range(5):: Ciclo que se repite 5 veces para pedir números a las listas.
+int(input()): Convierte la entrada del usuario en un número entero.
+try-except: Maneja errores si el usuario ingresa algo que no es un número.
+
+Ejercicio 3: Temperaturas mínimas y máximas de los últimos 5 días
+
+for i in range(5):: Ciclo que se repite 5 veces para solicitar las temperaturas mínimas y máximas de cada día.
+float(input()): Convierte la entrada del usuario en un número decimal (necesario para temperaturas que no sean enteras).
+min(), max(), sum(): Se utilizan para calcular la mínima, máxima y la media de las temperaturas.
+try-except: Maneja errores si el usuario no ingresa un número válido.
+
+Ejercicio 4: Adivinar un número
+
+random.randint(): Genera un número aleatorio entre 1 y 100.
+while intentos_restantes > 0:: Mantiene el ciclo activo hasta que se agoten los intentos o el número sea adivinado.
+int(input()): Convierte la entrada del usuario en un número entero.
+try-except: Controla errores si el usuario no ingresa un número.
+if-elif-else: Proporciona la lógica para comparar el número ingresado con el número secreto.
+intentos_restantes -= 1: Reduce el contador de intentos después de cada intento.
+break: Termina el ciclo si el número es adivinado.

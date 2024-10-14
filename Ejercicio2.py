@@ -1,3 +1,7 @@
+#Escribir un programa en Python que declare tres listas ‘lista1’, ‘lista2’ y ‘lista3’ de cinco
+#enteros cada uno, pida valores para ‘lista1’ y ‘lista2’ y calcule lista3=lista1+lista2.
+
+
 lista1=[]
 lista2=[]
 lista3=[]
@@ -17,7 +21,7 @@ for i in range(5):
         #evitamos que si el programa bota error se detenga, y le damos la opción de que continue de otra forma
         except ValueError:
             print("\nMomento momento, acabas de colocar algo diferente a un número?, intenta de nuevo!")
-            
+
 #Mismo proceso para obtener la info para la lista2            
 for i in range(5):
     while True:
@@ -30,6 +34,8 @@ for i in range(5):
 for i in range(5):
     lista3.append(lista1[i]+lista2[i])
 
+#Y finalizamos usando de nuevo el \n para dar un poco de orden a las respuestas, e imprimiendo el resultado de las
+#listas 1 y 2 y de paso la 3 que es la suma de los valores de las otras dos
 print(f"\nlista1:{lista1}")
 print(f"lista2:{lista2}")
 print(f"\nlista3(es el resultado de la suma de la lista1 y la lista2):{lista3}")
