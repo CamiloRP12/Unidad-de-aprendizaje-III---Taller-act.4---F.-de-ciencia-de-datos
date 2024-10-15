@@ -277,7 +277,14 @@ print("Curtosis:", curtosis_a)
 
 
 
-# --- Ahora procederemos con el punto 8
+# --- Ahora procederemos con el punto 8, las conclusiones a las que se pudo llegaron fueron las siguientes
+
+# Para ambos grupos de datos no se presentan datos atípicos en las edades, lo que significa que las edades son consistentes
+# y se encuentran dentro de un rango esperado
+# Respecto de la altura, ambos grupos comparten datos muy similares, son una media que difiere por casi nada y una mediana 
+# exactamente igual
+# Los datos de la asimetría y la curtosis del grupo 1 respecto de la altura, nos dan a entender que los datos no son 
+# simétricos, adicional a ello según la curtosis los datos no presentan demasiados valores extremos ni outliers
 
 
 
