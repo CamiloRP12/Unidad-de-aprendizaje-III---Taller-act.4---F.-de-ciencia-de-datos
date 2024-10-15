@@ -275,7 +275,17 @@ print("Asimetría y Curtosis del Grupo 1:")
 print("Asimetría:", asimetria_a)
 print("Curtosis:", curtosis_a)
 
+#LA RESPUESTA RESPECTO DE LA ASIMETRÍA Y LA CURTOSIS DEL GRUPO A ES LA SIGUIENTE. 
 
+# LA ASIMETRÍA SE ENCUENTRA EN -0.55 LO CUAL SIGNIFICA QUE:
+# La distribución de los datos está ligeramente inclinada hacia la izquierda (es decir, los valores tienden a concentrarse 
+# más en el lado derecho de la distribución, con una "cola" más larga en el lado izquierdo)
+# El valor de -0.55 sugiere que la asimetría no es muy fuerte, pero es notablemente sesgada hacia valores más bajos que la 
+# media. Es decir, hay más datos en la parte alta.
+
+#LA CURTOSIS EL RESULTADO ES DE 0.67 LO QUE SIGNIFICA QUE:
+#El valor 0.67 es relativamente bajo, lo que significa que los datos no presentan muchos valores extremos o outliers, y la 
+# concentración de datos en las colas es menor que en una distribución normal.
 
 # --- Ahora procederemos con el punto 8, las conclusiones a las que se pudo llegaron fueron las siguientes
 
